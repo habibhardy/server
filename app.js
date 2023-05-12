@@ -35,8 +35,10 @@ app.use(cors({
 
 //// DEMARRAGE DU SERVEUR SUR UN PORT DEFINI ////
 
-app.listen(5510,()=>{
-    console.log('the server is running on the port 5510 ....')
+const port = process.env.SERVER_PORT || 9050;
+
+app.listen(port,()=>{
+    console.log(`the server is running on the port ${port} ....`)
 })
 app.get('/get',(_,res)=>{
     res.send('hello apis !!!')
