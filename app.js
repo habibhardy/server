@@ -35,7 +35,9 @@ app.use(cors({
 
 //// DEMARRAGE DU SERVEUR SUR UN PORT DEFINI ////
 
-
+app.listen(5510,()=>{
+    console.log('the server is running on the port 5510 ....')
+})
 app.get('/get',(_,res)=>{
     res.send('hello apis !!!')
 })
