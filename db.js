@@ -8,7 +8,7 @@ const Sequelize = require('sequelize')
 let sequelize = new Sequelize.Sequelize(process.env.DATABASE_DBNAME,process.env.DATABASE_USERNAME,process.env.DATABASE_PASSWORD,{
 
     host:process.env.DATABASE_HOST,
-    port:process.env.PORT,
+    port:process.env.PORT_,
     dialect:'mysql',
     logging:false
 

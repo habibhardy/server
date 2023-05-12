@@ -35,7 +35,7 @@ app.use(cors({
 
 //// DEMARRAGE DU SERVEUR SUR UN PORT DEFINI ////
 
-const port = process.env.SERVER_PORT || 9050;
+const port = process.env.PORT || 9050;
 
 app.listen(port,()=>{
     console.log(`the server is running on the port ${port} ....`)
