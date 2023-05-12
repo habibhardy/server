@@ -5,10 +5,10 @@ const Sequelize = require('sequelize')
 
 //// CONNEXION A LA BASE DE DONNEE ////
 
-let sequelize = new Sequelize.Sequelize(process.env.DATABASE_DBNAME,process.env.DATABASE_USERNAME,process.env.DATABASE_PASSWORD,{
+let sequelize = new Sequelize.Sequelize("freedb_treasurehunt_db","freedb_habib10","p9Up!Zb5x@Rdvk*",{
 
-    host:process.env.DATABASE_HOST,
-    port:process.env.PORT_,
+    host:"sql.freedb.tech",
+    port:3306,
     dialect:'mysql',
     logging:false
 
