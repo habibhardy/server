@@ -38,12 +38,8 @@ app.use(cors({
 const port = process.env.PORT || 9050;
 
 app.listen(port,()=>{
-    console.log(`the server is running on the port ${port} ....`)
+    console.log(`the server is running on the port ${port} ...`)
 })
-app.get('/get',(_,res)=>{
-    res.send('hello apis !!!')
-})
-
 //// LA MISE EN PLACE DU ROUTAGE DU SERVEUR ////
 
 app.use(userRoute)
