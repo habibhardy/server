@@ -9,14 +9,13 @@ var compression = require('compression')
 
 // IMPORTATION DES DIFFERENTES ROUTES DE SERVICE DE L'APP //
 
-const userRoute = require('./routes/userRoute')
-const roleRoute = require('./routes/roleRoute')
-const eventRoute = require('./routes/eventRoute')
-const groupRoute = require('./routes/groupRoute')
-const quizRoute = require('./routes/quizRoute')
-const answerRoute = require('./routes/answerRoute')
-const authenticationRoute = require('./routes/authenticationRoute')
-const bodyParser = require('body-parser')
+const userRoute = require('../routes/userRoute')
+const roleRoute = require('../routes/roleRoute')
+const eventRoute = require('../routes/eventRoute')
+const groupRoute = require('../routes/groupRoute')
+const quizRoute = require('../routes/quizRoute')
+const answerRoute = require('../routes/answerRoute')
+const authenticationRoute = require('../routes/authenticationRoute')
 
 //// IMPLEMENTATION DES DIFFERENTS MODULES ////
 
@@ -36,6 +35,9 @@ app.use(cors({
 //// DEMARRAGE DU SERVEUR SUR UN PORT DEFINI ////
 
 const port = process.env.PORT || 9050;
+app.get('/',(req,res)=>{
+    res.json({message:"HELLO APIS !"})
+})
 
 app.listen(port,()=>{
     console.log(`the server is running on the port ${port} ...`)

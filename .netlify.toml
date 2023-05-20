@@ -1,0 +1,6 @@
+[build]
+   function="functions"
+[[redirects]]
+   to="/.netifly/functions/index/:splat"
+   from"/*"
+   status=200
