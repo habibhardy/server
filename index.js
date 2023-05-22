@@ -11,13 +11,13 @@ const serverless = require("serverless-http");
 
 // IMPORTATION DES DIFFERENTES ROUTES DE SERVICE DE L'APP //
 
-const userRoute = require('../routes/userRoute')
-const roleRoute = require('../routes/roleRoute')
-const eventRoute = require('../routes/eventRoute')
-const groupRoute = require('../routes/groupRoute')
-const quizRoute = require('../routes/quizRoute')
-const answerRoute = require('../routes/answerRoute')
-const authenticationRoute = require('../routes/authenticationRoute')
+const userRoute = require('./routes/userRoute')
+const roleRoute = require('./routes/roleRoute')
+const eventRoute = require('./routes/eventRoute')
+const groupRoute = require('./routes/groupRoute')
+const quizRoute = require('./routes/quizRoute')
+const answerRoute = require('./routes/answerRoute')
+const authenticationRoute = require('./routes/authenticationRoute')
 
 //// IMPLEMENTATION DES DIFFERENTS MODULES ////
 
@@ -54,6 +54,9 @@ app.use(quizRoute)
 app.use(answerRoute)
 app.use(authenticationRoute)
 
+
+
+module.exports = app;
 
 
 
