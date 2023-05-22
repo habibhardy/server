@@ -3,9 +3,11 @@
 
 const express = require('express')
 const cors = require('cors')
+let router = require('express').Router()
 require('dotenv').config()
 const app = express()
 var compression = require('compression')
+const serverless = require("serverless-http");
 
 // IMPORTATION DES DIFFERENTES ROUTES DE SERVICE DE L'APP //
 
@@ -51,6 +53,8 @@ app.use(groupRoute)
 app.use(quizRoute)
 app.use(answerRoute)
 app.use(authenticationRoute)
+
+
 
 
 

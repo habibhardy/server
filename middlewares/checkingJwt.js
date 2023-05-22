@@ -14,7 +14,6 @@ const extractBearer = authorization => {
 
 }
 
-
 //// VERIFICATION DE LA PRESENCE DU TOKEN  ////
 const checkTokenMiddleware = (req, res, next) => {
 
